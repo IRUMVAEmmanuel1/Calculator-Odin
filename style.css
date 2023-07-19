@@ -4,3 +4,10 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+.calcBody{
+    margin-left: 27em;
+    margin-top: 3rem;
+    color: white;
+
+}
