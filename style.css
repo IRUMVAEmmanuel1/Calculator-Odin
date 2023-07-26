@@ -45,3 +45,10 @@ button {
   background-color: #2196F3;
   color: #fff;
 }
+
+footer{
+  font-weight: bold;
+  text-align: center; 
+  margin-top: 12rem;
+
+}
