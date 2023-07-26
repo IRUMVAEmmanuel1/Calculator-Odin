@@ -1,65 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Calculator</title>
-</head>
-<body>
-   
-      
-
-      <!-- Title of Project --> 
-      <div class = 'project-name'> 
-        <h1> Calculator </h1>
-      </div> 
-      
-      <!-- Calculator container --> 
-      <div class = 'calculator-container'> 
-      
-        <!-- Grid - number display - 1st row -->
-        <div class="number-display-container">
-          <div class="number-on-screen"> 0 </div>
-        </div> 
-    
-        <div class="number-pad-container">
-          <button class='pad-button'>7</button> <!-- <button> the SPACES here MATTER </button> --> 
-          <button class='pad-button'>8</button>
-          <button class='pad-button'>9</button>
-          <button class='pad-button-color'>÷</button>
-          
-          <button class='pad-button'>4</button>
-          <button class='pad-button'>5</button>
-          <button class='pad-button'>6</button>
-          <button class='pad-button-color'>x</button>
-          
-          <button class='pad-button'>1</button>
-          <button class='pad-button'>2</button>
-          <button class='pad-button'>3</button>
-          <button class='pad-button-color'>-</button>
-          
-          <button class='pad-button'>0</button>
-          <button class='pad-button'>.</button>
-          <button class='pad-button'>AC</button>
-          <button class='pad-button-color'>+</button>
-          
-          <!-- Grid - credits - 6th last row --> 
-            
-          
-          <button class='pad-button-color' id='pad-button-equal-sign'>=</button>
-        </div> <!-- END 'number-pad-container' -->
-      </div> <!-- END 'calculator-container' -->
-    </body>
-      
-      
-    <footer>
-      <!-- Link to JavaScript file - at end to improve page load speed --> 
-      <script src="script.js"></script>
-    </footer>
-      
-    </html>    
-</body>
-<scripts src="main.js"></scripts>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="stylee.css" />
+		<title>Calculator</title>
+	</head>
+	<body>
+		<div class="calculator">
+			<div class="display" id="display">0</div>
+			<button class="clear" onclick="clearDisplay()">Clear</button>
+			<button onclick="appendToDisplay('7')">7</button>
+			<button onclick="appendToDisplay('8')">8</button>
+			<button onclick="appendToDisplay('9')">9</button>
+			<button class="operator" onclick="appendToDisplay('+')">+</button>
+			<button onclick="appendToDisplay('4')">4</button>
+			<button onclick="appendToDisplay('5')">5</button>
+			<button onclick="appendToDisplay('6')">6</button>
+			<button class="operator" onclick="appendToDisplay('-')">-</button>
+			<button onclick="appendToDisplay('1')">1</button>
+			<button onclick="appendToDisplay('2')">2</button>
+			<button onclick="appendToDisplay('3')">3</button>
+			<button class="operator" onclick="appendToDisplay('*')">*</button>
+			<button onclick="appendToDisplay('0')">0</button>
+			<button onclick="appendToDisplay('.')">.</button>
+			<button class="equals" onclick="calculate()">=</button>
+			<button class="operator" onclick="appendToDisplay('/')">/</button>
+		</div>
+	</body>
+	<scripts src="main.js"></scripts>
 </html>
